@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.navbar h1 {
+  margin: 0;
+  color: white;
+}
+
+.badge {
+  background-color: white;
+  color: #ff6b6b;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.movie-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.genre {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.description {
+  color: #444;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.added-btn {
+  background-color: #cccccc;
+  color: #666666;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: not-allowed;
+  width: 100%;
+}
+
+.remove-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
+.watchlist-container {
+  padding: 20px;
+}
+
+.watchlist-movie {
+  position: relative;
+}

@@ -1,0 +1,85 @@
+/* Animation for movie container fade-in */
+
+.movie-container {
+  animation: fadeIn 1.2s ease;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(30, 60, 90, 0.10);
+  padding: 32px 24px 24px 24px;
+  margin: 32px auto 0 auto;
+  max-width: 1400px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Animation for movie cards */
+.movie-card {
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  animation: cardPopIn 0.8s cubic-bezier(.25,.8,.25,1);
+}
+
+.movie-card:hover {
+  transform: scale(1.06) translateY(-6px) rotateZ(-1deg);
+  box-shadow: 0 8px 32px rgba(30, 60, 90, 0.18);
+}
+
+@keyframes cardPopIn {
+  0% { opacity: 0; transform: scale(0.92) translateY(30px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.watchlist-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.watchlist-btn:hover {
+  background-color: #ff5252;
+}
+
+.back-btn {
+  background-color: #6b6bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #5252ff;
+}
